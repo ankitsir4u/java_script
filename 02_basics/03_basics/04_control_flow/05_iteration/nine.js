@@ -38,7 +38,7 @@ const shoppingCart = [
     {
 
         itemName:"datascience course",
-        price:12999
+        price:12998
 },
 ]
 
