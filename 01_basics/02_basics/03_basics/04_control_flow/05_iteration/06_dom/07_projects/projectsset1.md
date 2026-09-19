@@ -1,9 +1,8 @@
 # project related to DOM
 
 ## project link
-[click here](https://github.com/ankitsir4u/DOM-project/blob/main/01-colorChanger/index.html)
-
-# solution codes
+1
+# solution code
 
 ## project 1
 
@@ -46,5 +45,30 @@ buttons.forEach(function(button) {
     
 
 
+
+```
+
+## project 2 solution
+
+```javascript
+
+const height = document.querySelector("#height");
+const weight = document.querySelector("#weight");
+const button = document.querySelector("#calculate");
+const results = document.querySelector("#results");
+
+button.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    const heightValue = parseFloat(height.value);
+    const weightValue = parseFloat(weight.value);
+
+    const heightInMeter = heightValue / 100;
+
+    const bmi = weightValue / (heightInMeter * heightInMeter);
+
+    results.innerHTML = `Your BMI is ${bmi.toFixed(2)}`;
+});
 
 ```
