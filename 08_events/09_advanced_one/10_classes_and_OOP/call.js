@@ -9,7 +9,7 @@ console.log("called");
 function createUser(username, email, password){
     setUsername.call(this, username)
 
-    this.enail = email
+    this.email = email
     this.password = password
 }
 
